@@ -12,6 +12,17 @@ function addToCollection(collection, title, artist, yearPublished) {
   return newAlbum;
 };
 
+addToCollection(myCollection, 'Igor', 'Tyler The Creator', 2019);
+addToCollection(myCollection, 'Blonde', 'Frank Ocean', 2016);
+addToCollection(myCollection, 'Damn', 'Kendrick Lamar', 2017);
+addToCollection(myCollection, 'Flower Boy', 'Tyler The Creator', 2017);
+addToCollection(myCollection, 'OK Computer', 'Radiohead', 1997);
+addToCollection(myCollection, 'Circles', 'Mac Miller', 2020);
+
+console.log(myCollection);
+
+
+
 
 
 
