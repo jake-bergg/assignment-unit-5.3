@@ -12,14 +12,23 @@ function addToCollection(collection, title, artist, yearPublished) {
   return newAlbum;
 };
 
-addToCollection(myCollection, 'Igor', 'Tyler The Creator', 2019);
-addToCollection(myCollection, 'Blonde', 'Frank Ocean', 2016);
-addToCollection(myCollection, 'Damn', 'Kendrick Lamar', 2017);
-addToCollection(myCollection, 'Flower Boy', 'Tyler The Creator', 2017);
-addToCollection(myCollection, 'OK Computer', 'Radiohead', 1997);
-addToCollection(myCollection, 'Circles', 'Mac Miller', 2020);
+console.log(addToCollection(myCollection, 'Igor', 'Tyler The Creator', 2019));
+console.log(addToCollection(myCollection, 'Blonde', 'Frank Ocean', 2016));
+console.log(addToCollection(myCollection, 'Damn', 'Kendrick Lamar', 2017));
+console.log(addToCollection(myCollection, 'Flower Boy', 'Tyler The Creator', 2017));
+console.log(addToCollection(myCollection, 'OK Computer', 'Radiohead', 1997));
+console.log(addToCollection(myCollection, 'Circles', 'Mac Miller', 2020));
 
 console.log(myCollection);
+
+function showCollection(collection, ) {
+  for (let index = 0; index < collection.length; index++) {
+    const album = collection[index];
+    console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}.`);
+  }
+};
+
+console.log(showCollection(myCollection));
 
 
 
