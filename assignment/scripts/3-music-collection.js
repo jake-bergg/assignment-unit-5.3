@@ -21,7 +21,7 @@ console.log(addToCollection(myCollection, 'Circles', 'Mac Miller', 2020));
 
 console.log(myCollection);
 
-function showCollection(collection, ) {
+function showCollection(collection) {
   for (let index = 0; index < collection.length; index++) {
     const album = collection[index];
     console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}.`);
@@ -29,6 +29,21 @@ function showCollection(collection, ) {
 };
 
 console.log(showCollection(myCollection));
+
+function findByArtist(collection, artist) {
+  const results = []; 
+  for (const album of collection) {
+    if (album.artist === artist) {
+      results.push(album);
+    }
+  }
+  return results;
+}
+
+console.log(findByArtist(myCollection, 'Tyler The Creator'));
+console.log(findByArtist(myCollection, 'Pink Floyd'));
+
+
 
 
 
